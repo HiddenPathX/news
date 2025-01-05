@@ -1,0 +1,16 @@
+.nav-item {
+  font-size: 1.2rem; /* 放大字体 */
+  padding: 0.8rem 1.2rem;
+  transition: all 0.3s ease; /* 添加过渡效果 */
+}
+
+.nav-item:hover {
+  transform: scale(1.1); /* 悬停时放大效果 */
+  background-color: rgba(0, 0, 0, 0.05); /* 悬停时背景轻微变化 */
+  border-radius: 4px;
+}
+
+/* 深色模式下的悬停效果 */
+.dark .nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+} 

@@ -56,3 +56,26 @@ button:disabled {
 .grabbing * {
   cursor: grabbing;
 }
+
+.navigation {
+  --nav-font-size: 1.1rem;
+  --nav-padding: 0.8rem 1.2rem;
+  --nav-hover-bg: rgba(255, 255, 255, 0.1);
+}
+
+.navigation a, .navigation .nav-button {
+  font-size: var(--nav-font-size);
+  padding: var(--nav-padding);
+  transition: all 0.2s ease;
+  border-radius: 4px;
+}
+
+.navigation a:hover, .navigation .nav-button:hover {
+  background: var(--nav-hover-bg);
+  transform: scale(1.05);
+}
+
+.navigation .active {
+  font-weight: bold;
+  text-decoration: underline;
+}

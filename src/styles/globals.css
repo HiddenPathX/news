@@ -60,7 +60,7 @@ button:disabled {
 }
 
 .navigation {
-  --nav-font-size: 1.1rem;
+  --nav-font-size: 1.3rem;
   --nav-padding: 0.8rem 1.2rem;
   --nav-hover-bg: rgba(255, 255, 255, 0.1);
 }

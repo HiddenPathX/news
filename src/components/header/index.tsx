@@ -1,5 +1,6 @@
-import { Link } from "@tanstack/react-router"
 import { useIsFetching } from "@tanstack/react-query"
+import { useAtomValue } from "jotai"
+import { useRefetch } from "~/hooks/useRefetch"
 import type { SourceID } from "@shared/types"
 import { NavBar } from "../navbar"
 import { Menu } from "./menu"
@@ -43,15 +44,18 @@ export function Header() {
   return (
     <>
       <span className="flex justify-self-start">
-        <Link to="/" className="flex gap-2 items-center">
-          <span className="text-2xl font-brand line-height-none!">
-            <p>News</p>
-            <p className="mt--1">
-              <span className="color-primary-6">N</span>
-              <span>ow</span>
-            </p>
+        <span 
+          className="flex gap-2 items-center cursor-pointer"
+          onClick={() => window.location.href = "https://learningxxx.top/"}
+        >
+          <span className="text-2xl font-brand line-height-none! flex flex-col items-center">
+            <span>返回</span>
+            <span className="whitespace-nowrap">
+              <span className="color-primary-6">番</span>
+              <span>茄钟</span>
+            </span>
           </span>
-        </Link>
+        </span>
       </span>
       <span className="justify-self-center">
         <span className="hidden md:(inline-block)">
